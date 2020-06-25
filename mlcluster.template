@@ -258,8 +258,8 @@ Parameters:
     MaxValue: '2'
     Default: '0'
   KeyName:
-    Description: Name of and existing EC2 KeyPair to enable SSH access to the instance
-    Type: String
+    Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
+    Type: 'AWS::EC2::KeyPair::KeyName'
   NumberOfZones:
     Description: Total number of Availability Zones. 1 or 3.
     Type: Number
