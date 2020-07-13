@@ -251,8 +251,8 @@ Parameters:
       - r5d.large
       - r5d.xlarge
       - r5d.2xlarge
-      - r5d.8xlarge
       - r5d.4xlarge
+      - r5d.8xlarge
       - r5d.12xlarge
       - r5d.16xlarge
       - r5d.24xlarge
@@ -270,8 +270,8 @@ Parameters:
     MaxValue: '2'
     Default: '0'
   KeyName:
-    Description: Name of and existing EC2 KeyPair to enable SSH access to the instance.
-    Type: String
+    Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
+    Type: 'AWS::EC2::KeyPair::KeyName'
   NumberOfZones:
     Description: Total number of Availability Zones. 1 or 3.
     Type: Number
